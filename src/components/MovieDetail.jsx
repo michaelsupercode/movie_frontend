@@ -8,7 +8,7 @@ const MovieDetail = () => {
 
     console.log(movie)
     useEffect(() => {
-        fetch("http://localhost:9000/movies/" + id)
+        fetch("https://movie-server-qfx5.onrender.com/movies/" + id)
         .then(response => response.json())
         .then(movieObject => setMovie(movieObject))
     }, [id])

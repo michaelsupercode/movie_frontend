@@ -7,7 +7,7 @@ const MovieList = () => {
     const [movies, setMovies] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:9000/movies")
+        fetch("https://movie-server-qfx5.onrender.com/movies")
         .then(response => response.json())
         .then(moviesArray => setMovies(moviesArray))
     }, [])

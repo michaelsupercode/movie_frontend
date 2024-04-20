@@ -29,7 +29,7 @@ const AddMovie = ({ setMovies }) => {
     const addMovie = (event) => {
         event.preventDefault()
 
-        fetch("http://localhost:9000/movies", {
+        fetch("https://movie-server-qfx5.onrender.com/movies", {
             method: "post",
             headers: {
                 "Content-Type": "application/json"
