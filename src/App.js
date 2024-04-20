@@ -1,8 +1,10 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { disableReactDevTools } from ‘@fvilers/disable-react-devtools’;
+import { disableReactDevTools } from '@fvilers/disable-react-devtools';
 import './App.css';
 import MovieDetail from './components/MovieDetail';
 import MovieList from './components/MovieList';
+
+if (process.env.NODE_ENV === 'production') disableReactDevTools ()
 
 function App() {
   return (
